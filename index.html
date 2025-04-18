@@ -4,37 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Choix de fête aventure 32 ans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      text-align: center;
-      padding: 40px;
-      background: #f8f2ed;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdf9f6;
       color: #333;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
     }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+      margin-bottom: 10px;
       color: #d2691e;
     }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
     .options {
       display: flex;
       flex-direction: column;
-      gap: 30px;
-      margin-top: 40px;
+      gap: 40px;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    a.option {
-      display: inline-block;
+
+    .option-card {
+      border: 2px solid #e4c4a3;
+      border-radius: 15px;
       padding: 20px;
-      border: 2px solid #d2691e;
-      border-radius: 12px;
       text-decoration: none;
-      color: #d2691e;
-      font-size: 1.2em;
-      transition: background 0.2s;
+      color: inherit;
       background-color: white;
+      transition: transform 0.2s ease;
     }
-    a.option:hover {
-      background-color: #ffe5d1;
+
+    .option-card:hover {
+      transform: scale(1.02);
+      background-color: #fff4ea;
+    }
+
+    .option-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .option-title {
+      font-size: 1.4em;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -43,9 +66,18 @@
   <p>Voici 3 idées cadeaux pour célébrer ton anniversaire 🎁</p>
 
   <div class="options">
-    <a href="option1.html" class="option">🚁 Tour en hélicoptère en Estrie</a>
-    <a href="option2.html" class="option">🏕️ Weekend rando + chalet au Mont Washington</a>
-    <a href="option3.html" class="option">🎈 Vol en montgolfière en Montérégie</a>
+    <a href="option1.html" class="option-card">
+      <img src="https://images.unsplash.com/photo-1619025418144-88fdad9a8260?auto=format&fit=crop&w=800&q=80" alt="Tour en hélicoptère" class="option-img">
+      <div class="option-title">🚁 Tour en hélicoptère en Estrie</div>
+    </a>
+    <a href="option2.html" class="option-card">
+      <img src="https://images.unsplash.com/photo-1624321020049-d5abdbf49a2d?auto=format&fit=crop&w=800&q=80" alt="Rando Mont Washington" class="option-img">
+      <div class="option-title">🏕️ Weekend rando + chalet au Mont Washington</div>
+    </a>
+    <a href="option3.html" class="option-card">
+      <img src="https://images.unsplash.com/photo-1516920267776-b3c4e09d773b?auto=format&fit=crop&w=800&q=80" alt="Montgolfière Montérégie" class="option-img">
+      <div class="option-title">🎈 Vol en montgolfière en Montérégie</div>
+    </a>
   </div>
 </body>
 </html>
