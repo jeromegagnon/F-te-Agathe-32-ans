@@ -2,34 +2,53 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vol en montgolfière</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      background: #fff5e1;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdf9f6;
+      color: #333;
+      padding: 20px;
       text-align: center;
-      padding: 40px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
     h1 {
-      color: #e65100;
+      font-size: 2em;
+      color: #dc143c;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0 30px;
     }
     .button {
-      background: #e65100;
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background-color: #ff3b6b;
       color: white;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 10px;
       text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background-color: #cc2e56;
     }
   </style>
 </head>
 <body>
+  <img src="https://images.unsplash.com/photo-1516920267776-b3c4e09d773b?auto=format&fit=crop&w=1200&q=80" alt="Montgolfière">
   <h1>🎈 Vol en montgolfière en Montérégie</h1>
-  <p>Une aventure douce et poétique au lever du soleil, dans les airs au-dessus des champs 🌄</p>
+  <p>Un vol au lever du soleil pour découvrir les paysages d’en haut, en douceur et en magie.</p>
+
+  <a href="mailto:jerome@email.com?subject=Je choisis la montgolfière!&body=Je choisis l’option 3 : le vol en montgolfière en Montérégie 🎈" class="button">Je choisis celui-ci</a>
   <br>
-  <a href="mailto:ton.adresse@email.com?subject=🎁%20Je%20choisis%20mon%20cadeau%20d’anniversaire!&body=Coucou%20%F0%9F%91%91%0A%0AJe%20veux%20le%20vol%20en%20montgolfière%20en%20Montérégie%20%21%20Juste%20y%20penser%20me%20fait%20sourire.%20Quelle%20idée%20magique%2C%20j’ai%20hâte%20de%20vivre%20ça%20avec%20toi%20%F0%9F%8C%88%0A%0AMerci%20x1000%20%F0%9F%A4%A9%0A%0AGros%20bisous%20!" class="button">
-    Je choisis celui-ci 💝
-  </a>
+  <a href="index.html" class="button" style="background-color: #aaa;">Voir les autres options</a>
 </body>
 </html>
