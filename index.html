@@ -8,9 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
   <style>
-    body, a, button, input, select, textarea {
-    cursor: url('images/cursor.png'), auto;
-    }
+
+  /* Style du faux curseur */
+  #custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: url('https://github.com/jeromegagnon/fete-agathe/raw/main/images/curseur.png') no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+  animation: spin 4s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+    /* FIN Style du faux curseur */
 
     body {
       background: #fdf9f6;
@@ -69,6 +87,7 @@
     }
   </style>
 </head>
+  
 <body>
   <h1>Choix de fête aventure 32 ans</h1>
   <p>Voici 3 idées cadeaux pour célébrer ton anniversaire 🎁</p>
@@ -87,5 +106,15 @@
       <div class="option-title">🎈 Vol en montgolfière en Montérégie</div>
     </a>
   </div>
+  <div id="custom-cursor"></div>
+  <script>
+  const cursor = document.getElementById('custom-cursor');
+
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+</script>
+
 </body>
 </html>
