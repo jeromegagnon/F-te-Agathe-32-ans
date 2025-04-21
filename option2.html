@@ -21,7 +21,8 @@
       border-radius: 12px;
       margin-bottom: 20px;
     }
-    h1 {
+    h1, h2 {
+      font-family: '', sans-serif;
       font-size: 2em;
       color: #228b22;
     }
@@ -53,5 +54,15 @@
   <a href="mailto:jerome@email.com?subject=Je choisis la rando au Mont Washington!&body=Je choisis l’option 2 : le weekend randonnée et chalet au Mont Washington 🏕️" class="button">Je choisis celui-ci</a>
   <br>
   <a href="index.html" class="button" style="background-color: #aaa;">Voir les autres options</a>
+  
+  <div id="custom-cursor"></div>
+
+  <script>
+  const cursor = document.getElementById('custom-cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+  </script>
 </body>
 </html>
