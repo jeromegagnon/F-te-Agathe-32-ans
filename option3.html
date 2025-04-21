@@ -55,5 +55,15 @@
   <a href="mailto:jerome@email.com?subject=Je choisis la montgolfière!&body=Je choisis l’option 3 : le vol en montgolfière en Montérégie 🎈" class="button">Je choisis celui-ci</a>
   <br>
   <a href="index.html" class="button" style="background-color: #aaa;">Voir les autres options</a>
+  
+  <div id="custom-cursor"></div>
+
+  <script>
+  const cursor = document.getElementById('custom-cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+  </script>
 </body>
 </html>
