@@ -1,10 +1,19 @@
-@font-face {
-  font-family: 'Gonzaga-Trial-Black';
-  src: url('https://github.com/jeromegagnon/fete-agathe/raw/main/fonts/Gonzaga-Trial-Black.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+/* Custom cursor */
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 112px;
+  height: 112px;
+  background: url('images/cursor.png') no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+  animation: spin 4s linear infinite;
+  transform: translate(-50%, -50%);
 }
 
-body {
-  font-family: 'Gonzaga-Trial-Black', sans-serif !important;
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
