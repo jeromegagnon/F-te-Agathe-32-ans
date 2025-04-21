@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tour en hélicoptère</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
@@ -50,5 +50,16 @@
   <a href="mailto:jerome@email.com?subject=Je choisis le tour en hélicoptère!&body=Je choisis l’option 1 : le vol en hélicoptère en Estrie 🚁" class="button">Je choisis celui-ci</a>
   <br>
   <a href="index.html" class="button" style="background-color: #aaa;">Voir les autres options</a>
+  
+  <div id="custom-cursor"></div>
+
+  <script>
+  const cursor = document.getElementById('custom-cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+  </script>
+
 </body>
 </html>
