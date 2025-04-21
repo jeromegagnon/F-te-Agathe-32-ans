@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'GonzagaBlack';
+  font-family: 'Gonzaga-Trial-Black';
   src: url('https://github.com/jeromegagnon/fete-agathe/raw/main/fonts/Gonzaga-Trial-Black.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-h1, h2, .title {
-  font-family: 'GonzagaBlack', sans-serif;
+body {
+  font-family: 'Gonzaga-Trial-Black', sans-serif;
 }
